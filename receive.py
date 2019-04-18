@@ -6,7 +6,7 @@ channel = connection.channel()
 channel.queue_declare(queue='hello')
 
 def callback(ch, method, properties, body):
-    print(" [x] Received %r" % body)
+    print(f" [x] Received {body}")
 
 channel.basic_consume(queue='hello',
                       auto_ack=True,

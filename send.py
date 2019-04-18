@@ -7,7 +7,7 @@ channel.queue_declare(queue='hello')
 
 channel.basic_publish(exchange='',
                       routing_key='hello',
-                      body='moto')
+                      body='My name is BonJay')
 print(" [x] Sent 'Hello World!'")
 
 connection.close()
